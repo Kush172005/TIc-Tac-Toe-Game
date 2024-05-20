@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: auto;
+    margin-top: 40px;
+    border: 2.5px solid #008CBA;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 20rem;
+    height: 20rem;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.cell {
+    border: 2px solid #45a049;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.wn{
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 27rem;
+    margin-left: 6rem;
+}
+
+.cell:hover {
+    background-color: #bbb;
+    transform: scale(1.05);
+    
+}
+
+#restartButton {
+    height: 2.8rem;
+    width: 8rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#undoButton {
+    height: 2.8rem;
+    width: 8rem;
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#undoButton:hover {
+    background-color: #0077a3;
+    transform: scale(1.05);
+}
